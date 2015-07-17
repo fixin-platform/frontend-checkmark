@@ -1,0 +1,1 @@
+CheckmarksHandle = Meteor.subscribe("Checkmarks")
