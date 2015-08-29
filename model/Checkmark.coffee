@@ -12,7 +12,7 @@ CheckmarkPreSave = (userId, changes) ->
 Checkmarks.before.insert (userId, Checkmark) ->
   Checkmark._id ||= Random.id()
   now = new Date()
-  _.defaults(Checkmark,
+  _.autovalues(Checkmark,
     userId: userId
     updatedAt: now
     createdAt: now
